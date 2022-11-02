@@ -1,0 +1,275 @@
+@mixin center-el {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.App {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper {
+	max-width: 1494px;
+	padding-top: 1.2rem;
+	padding-left: 3rem;
+	position: relative;
+}
+
+@media screen and (max-width: 860px) {
+	.wrapper {
+		padding-left: 0;
+		text-align: center;
+		position: static;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.wrapper {
+		@include center-el;
+	}
+}
+
+.link {
+	text-decoration: none;
+	color: white;
+}
+
+img {
+	max-width: 100%
+}
+
+//----HEADER----// 
+
+.header {
+	display: flex;
+	margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 860px) {
+	.header {
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+.nav {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nav__list {
+	display: flex;
+	list-style-type: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+@media screen and (max-width: 860px) {
+	.nav__list {
+		flex-direction: column;
+		margin-top: 1rem;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+.nav__list li {
+	margin-top: 0.4rem;
+	margin-right: 3rem;
+}
+
+@media screen and (max-width: 860px) {
+	.nav__list li {
+		margin-right: 0;
+	}
+}
+
+.nav__list li:last-of-type {
+	margin-top: 0.2rem;
+	margin-right: 0;
+}
+
+@media screen and (max-width: 860px) {
+	.nav__list li:last-of-type {
+		margin-top: 0.7rem;
+	}
+}
+
+//----MAIN_AD----//
+
+.main_ad {
+	background-image: url(/src/assets/vector.svg);
+	background-color: #FCDA28;
+	background-size: cover;
+}
+
+.main_ad__h1 {
+	font-size: 8rem;
+	line-height: 8rem;
+	margin: 0;
+	margin-top: 4.5rem;
+	max-width: fit-content;
+}
+
+@media screen and (max-width: 860px) {
+	.main_ad__h1 {
+		font-size: 3rem;
+		line-height: 3rem;
+		text-align: center;
+		margin-top: 1rem;
+		@include center-el;
+	}
+}
+
+.main_ad__h3 {
+	color: black;
+	max-width: fit-content;
+	font-size: 2rem;
+	margin-top: 122px;
+}
+
+@media screen and (max-width: 860px) {
+	.main_ad__h3 {
+		text-align: center;
+		margin-top: 1rem;
+		@include center-el;
+	}
+}
+
+.main_ad__p {
+	color: black;
+	max-width: fit-content;
+}
+
+@media screen and (max-width: 860px) {
+	.main_ad__p {
+		text-align: center;
+		margin-top: 3rem;
+		@include center-el;
+	}
+}
+
+.main_ad__p_bigger {
+	color: black;
+	max-width: fit-content;
+	margin-top: 45px;
+	font-size: 1.3rem;
+}
+
+@media screen and (max-width: 860px) {
+	.main_ad__p_bigger {
+		text-align: center;
+	}
+}
+
+.main_ad__product_img {
+	position: absolute;
+	right: 60px;
+	top: 70px;
+}
+
+@media screen and (max-width: 860px) {
+	.main_ad__product_img {
+		margin-top: 1rem;
+		position: static;
+		max-height: 450px;
+	}
+}
+
+.wrapper__main_ad {
+	padding-bottom: 3.6rem;
+}
+
+@media screen and (max-width: 860px) {
+	.wrapper__main_ad {
+		padding-bottom: 2rem;
+	}
+}
+
+//----MAIN_ORDER----//
+
+.wrapper__main_order {
+	padding-top: 5rem;
+	padding-left: 2rem;
+	text-align: center;
+}
+
+@media screen and (max-width: 860px) {
+	.wrapper__main_order {
+		padding-left: 0;
+		padding-top: 2rem;
+	}
+}
+
+.main_order__h2 {
+	font-size: 2.6rem;
+	line-height: 2.6rem;
+}
+
+@media screen and (max-width: 860px) {
+	.main_order__h2 {
+		font-size: 2rem;
+	}
+}
+
+.main_order__h2_span {
+	color: orange;
+}
+
+.main_order__price {
+	font-size: 2.6rem;
+	padding-top: 3rem;
+}
+
+.main_order__old_price {
+	font-size: 2rem;
+	color: grey;
+	text-decoration: line-through;
+	padding-right: 2rem;
+}
+
+.benefits {
+	display: grid;
+	grid-auto-flow: column;
+}
+
+@media screen and (max-width: 860px) {
+	.benefits {
+		grid-auto-flow: row;
+	}
+}
+
+.main_order__span {
+	font-size: 1rem;
+	color: orange;
+}
+
+.text_special {
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+}
+
+.main_order__p_bigger {
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+@media screen and (max-width: 860px) {
+	.main_order__p__bigger {
+		font-size: 1.5rem;
+	}
+}
+
+.button_order {
+	font-family: Rubik;
+	font-size: 1rem;
+	margin-top: 2.2rem;
+	margin-bottom: 7rem;
+	width: 256px;
+	height: 56px;
+	border-radius: 7px;
+	background-color: orange;
+	color: black;
+	border: none;
+	cursor: pointer;
+}
