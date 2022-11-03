@@ -1,9 +1,9 @@
 import logo from './assets/logo.svg'
 import basket from './assets/basket.png'
-import product from './assets/product.png'
 import ginger from './assets/ginger.png'
 import nootris from './assets/nootris.png'
 import virus from './assets/virus.png'
+import product from './assets/product.png'
 import './App.scss'
 
 function App() {
@@ -25,6 +25,16 @@ function App() {
 				</nav>
 			</header>
 			<main>
+				<section className='bg_settings'>
+					<div className='wrapper wrapper__main_ad'>
+						<h1 className='main_ad__h1'>АКТИВИРУЙ<br /> ИММУНИТЕТ!</h1>
+						<p className='main_ad__p_bigger'>Всего пять секунд в день помогут укрепить иммунитет<br />и повысить защитные силы организма</p>
+						<img className='main_ad__product_img' src={product} />
+						<h3 className='main_ad__h3'>NOOTRIS ПОМОГАЕТ</h3>
+						<p className='main_ad__p'>Вашему организму во время пандемии<br />и сезонных простуд</p>
+					</div>
+				</section>
+
 				<section className='main_ad'>
 					<div className='wrapper wrapper__main_ad'>
 						<h1 className='main_ad__h1'>АКТИВИРУЙ<br /> ИММУНИТЕТ!</h1>
